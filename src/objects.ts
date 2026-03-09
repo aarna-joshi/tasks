@@ -158,4 +158,3 @@ export function mergeQuestion(
         published: false,
     };
 }
-
