@@ -9,11 +9,7 @@ import {
     renameQuestion,
     publishQuestion,
     addOption,
-<<<<<<< HEAD
-    mergeQuestion,
-=======
     mergeQuestion
->>>>>>> upstream/task-state
 } from "./objects";
 import testQuestionData from "./data/questions.json";
 import backupQuestionData from "./data/questions.json";
@@ -29,11 +25,7 @@ const { BLANK_QUESTIONS, SIMPLE_QUESTIONS }: Record<string, Question[]> =
 // We have backup versions of the data to make sure all changes are immutable
 const {
     BLANK_QUESTIONS: BACKUP_BLANK_QUESTIONS,
-<<<<<<< HEAD
-    SIMPLE_QUESTIONS: BACKUP_SIMPLE_QUESTIONS,
-=======
     SIMPLE_QUESTIONS: BACKUP_SIMPLE_QUESTIONS
->>>>>>> upstream/task-state
 }: Record<string, Question[]> = backupQuestionData as Record<
     string,
     Question[]
