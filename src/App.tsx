@@ -1,27 +1,12 @@
 import React from "react";
 import "./App.css";
-<<<<<<< HEAD
-=======
-
->>>>>>> solved-nested
 import { ChangeType } from "./components/ChangeType";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { StartAttempt } from "./components/StartAttempt";
 import { TwoDice } from "./components/TwoDice";
 import { CycleHoliday } from "./components/CycleHoliday";
 import { Counter } from "./components/Counter";
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-import { DoubleHalf } from "./bad-components/DoubleHalf";
-import { ColoredBox } from "./bad-components/ColoredBox";
-import { ShoveBox } from "./bad-components/ShoveBox";
-import { ChooseTeam } from "./bad-components/ChooseTeam";
->>>>>>> upstream/task-components
-
-=======
 import { Button, Col, Container, Row } from "react-bootstrap";
->>>>>>> solved-nested
 function App(): React.JSX.Element {
     return (
         <div className="App">
@@ -29,14 +14,6 @@ function App(): React.JSX.Element {
                 UD CISC275 with React Hooks and TypeScript Aarna Joshi
                 <h1>This is my header text</h1>
             </header>
-            <hr></hr>
-            {/* <DoubleHalf></DoubleHalf> */}
-            <hr></hr>
-            <ChooseTeam></ChooseTeam>
-            <hr></hr>
-            <ColoredBox></ColoredBox>
-            <hr></hr>
-            <ShoveBox></ShoveBox>
             <hr></hr>
             <Counter></Counter>
             <hr />
@@ -49,8 +26,6 @@ function App(): React.JSX.Element {
             <ChangeType></ChangeType>
             <hr />
             <CycleHoliday></CycleHoliday>
-<<<<<<< HEAD
-=======
             <img
                 src="https://mywoof.com/cdn/shop/files/what-are-the-top-10-most-popular-dog-breeds_6123531017718663713_20250110.jpg"
                 alt="this image has a lot of happy doggies"
@@ -80,7 +55,6 @@ function App(): React.JSX.Element {
                 <li>blue</li>
                 <li>silver</li>
             </ul>
->>>>>>> solved-nested
         </div>
     );
 }
