@@ -11,6 +11,13 @@ import { TwoDice } from "./components/TwoDice";
 import { CycleHoliday } from "./components/CycleHoliday";
 import { Counter } from "./components/Counter";
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import { DoubleHalf } from "./bad-components/DoubleHalf";
+import { ColoredBox } from "./bad-components/ColoredBox";
+import { ShoveBox } from "./bad-components/ShoveBox";
+import { ChooseTeam } from "./bad-components/ChooseTeam";
+>>>>>>> upstream/task-components
 
 =======
 import { Button, Col, Container, Row } from "react-bootstrap";
@@ -22,6 +29,14 @@ function App(): React.JSX.Element {
                 UD CISC275 with React Hooks and TypeScript Aarna Joshi
                 <h1>This is my header text</h1>
             </header>
+            <hr></hr>
+            {/* <DoubleHalf></DoubleHalf> */}
+            <hr></hr>
+            <ChooseTeam></ChooseTeam>
+            <hr></hr>
+            <ColoredBox></ColoredBox>
+            <hr></hr>
+            <ShoveBox></ShoveBox>
             <hr></hr>
             <Counter></Counter>
             <hr />
