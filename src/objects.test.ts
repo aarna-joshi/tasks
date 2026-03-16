@@ -9,11 +9,7 @@ import {
     renameQuestion,
     publishQuestion,
     addOption,
-<<<<<<< HEAD
     mergeQuestion,
-=======
-    mergeQuestion
->>>>>>> solved-nested
 } from "./objects";
 import testQuestionData from "./data/questions.json";
 import backupQuestionData from "./data/questions.json";
@@ -29,11 +25,7 @@ const { BLANK_QUESTIONS, SIMPLE_QUESTIONS }: Record<string, Question[]> =
 // We have backup versions of the data to make sure all changes are immutable
 const {
     BLANK_QUESTIONS: BACKUP_BLANK_QUESTIONS,
-<<<<<<< HEAD
     SIMPLE_QUESTIONS: BACKUP_SIMPLE_QUESTIONS,
-=======
-    SIMPLE_QUESTIONS: BACKUP_SIMPLE_QUESTIONS
->>>>>>> solved-nested
 }: Record<string, Question[]> = backupQuestionData as Record<
     string,
     Question[]
@@ -46,11 +38,7 @@ const [
     BACKUP_ADDITION_QUESTION,
     BACKUP_LETTER_QUESTION,
     BACKUP_COLOR_QUESTION,
-<<<<<<< HEAD
     BACKUP_SHAPE_QUESTION,
-=======
-    BACKUP_SHAPE_QUESTION
->>>>>>> solved-nested
 ] = BACKUP_SIMPLE_QUESTIONS;
 
 ////////////////////////////////////////////
@@ -62,7 +50,6 @@ describe("Testing the object functions", () => {
 
     test("Testing the makeBlankQuestion function", () => {
         expect(
-<<<<<<< HEAD
             makeBlankQuestion(1, "Question 1", "multiple_choice_question"),
         ).toEqual(BLANK_QUESTIONS[0]);
         expect(
@@ -74,15 +61,6 @@ describe("Testing the object functions", () => {
         ).toEqual(BLANK_QUESTIONS[1]);
         expect(
             makeBlankQuestion(2, "Question 2", "short_answer_question"),
-=======
-            makeBlankQuestion(1, "Question 1", "multiple_choice_question")
-        ).toEqual(BLANK_QUESTIONS[0]);
-        expect(
-            makeBlankQuestion(47, "My New Question", "multiple_choice_question")
-        ).toEqual(BLANK_QUESTIONS[1]);
-        expect(
-            makeBlankQuestion(2, "Question 2", "short_answer_question")
->>>>>>> solved-nested
         ).toEqual(BLANK_QUESTIONS[2]);
     });
 
@@ -169,11 +147,7 @@ What shape can you make with one line?
     // renameQuestion
     test("Testing the renameQuestion function", () => {
         expect(
-<<<<<<< HEAD
             renameQuestion(ADDITION_QUESTION, "My Addition Question"),
-=======
-            renameQuestion(ADDITION_QUESTION, "My Addition Question")
->>>>>>> solved-nested
         ).toEqual({
             id: 1,
             name: "My Addition Question",
@@ -182,17 +156,10 @@ What shape can you make with one line?
             options: [],
             expected: "4",
             points: 1,
-<<<<<<< HEAD
             published: true,
         });
         expect(
             renameQuestion(SHAPE_QUESTION, "I COMPLETELY CHANGED THIS NAME"),
-=======
-            published: true
-        });
-        expect(
-            renameQuestion(SHAPE_QUESTION, "I COMPLETELY CHANGED THIS NAME")
->>>>>>> solved-nested
         ).toEqual({
             id: 9,
             name: "I COMPLETELY CHANGED THIS NAME",
@@ -201,11 +168,7 @@ What shape can you make with one line?
             options: ["square", "triangle", "circle"],
             expected: "circle",
             points: 2,
-<<<<<<< HEAD
             published: false,
-=======
-            published: false
->>>>>>> solved-nested
         });
     });
 
@@ -220,11 +183,7 @@ What shape can you make with one line?
             options: [],
             expected: "4",
             points: 1,
-<<<<<<< HEAD
             published: false,
-=======
-            published: false
->>>>>>> solved-nested
         });
         expect(publishQuestion(LETTER_QUESTION)).toEqual({
             id: 2,
@@ -234,11 +193,7 @@ What shape can you make with one line?
             options: [],
             expected: "Z",
             points: 1,
-<<<<<<< HEAD
             published: true,
-=======
-            published: true
->>>>>>> solved-nested
         });
         expect(publishQuestion(publishQuestion(ADDITION_QUESTION))).toEqual({
             id: 1,
@@ -248,11 +203,7 @@ What shape can you make with one line?
             options: [],
             expected: "4",
             points: 1,
-<<<<<<< HEAD
             published: true,
-=======
-            published: true
->>>>>>> solved-nested
         });
     });
 
@@ -267,11 +218,7 @@ What shape can you make with one line?
             options: [],
             expected: "4",
             points: 1,
-<<<<<<< HEAD
             published: false,
-=======
-            published: false
->>>>>>> solved-nested
         });
         expect(duplicateQuestion(55, LETTER_QUESTION)).toEqual({
             id: 55,
@@ -281,11 +228,7 @@ What shape can you make with one line?
             options: [],
             expected: "Z",
             points: 1,
-<<<<<<< HEAD
             published: false,
-=======
-            published: false
->>>>>>> solved-nested
         });
     });
 
@@ -300,11 +243,7 @@ What shape can you make with one line?
             options: ["square", "triangle", "circle", "heptagon"],
             expected: "circle",
             points: 2,
-<<<<<<< HEAD
             published: false,
-=======
-            published: false
->>>>>>> solved-nested
         });
         expect(addOption(COLOR_QUESTION, "squiggles")).toEqual({
             id: 5,
@@ -314,11 +253,7 @@ What shape can you make with one line?
             options: ["red", "apple", "firetruck", "squiggles"],
             expected: "red",
             points: 1,
-<<<<<<< HEAD
             published: true,
-=======
-            published: true
->>>>>>> solved-nested
         });
     });
 
@@ -330,13 +265,8 @@ What shape can you make with one line?
                 192,
                 "More Points Addition",
                 ADDITION_QUESTION,
-<<<<<<< HEAD
                 SHAPE_QUESTION,
             ),
-=======
-                SHAPE_QUESTION
-            )
->>>>>>> solved-nested
         ).toEqual({
             id: 192,
             name: "More Points Addition",
@@ -345,11 +275,7 @@ What shape can you make with one line?
             options: [],
             expected: "4",
             points: 2,
-<<<<<<< HEAD
             published: false,
-=======
-            published: false
->>>>>>> solved-nested
         });
 
         expect(
@@ -357,13 +283,8 @@ What shape can you make with one line?
                 99,
                 "Less Points Shape",
                 SHAPE_QUESTION,
-<<<<<<< HEAD
                 ADDITION_QUESTION,
             ),
-=======
-                ADDITION_QUESTION
-            )
->>>>>>> solved-nested
         ).toEqual({
             id: 99,
             name: "Less Points Shape",
@@ -372,11 +293,7 @@ What shape can you make with one line?
             options: ["square", "triangle", "circle"],
             expected: "circle",
             points: 1,
-<<<<<<< HEAD
             published: false,
-=======
-            published: false
->>>>>>> solved-nested
         });
     });
 });
