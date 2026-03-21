@@ -81,6 +81,11 @@ function App(): React.JSX.Element {
                     </Col>
                 </Row>
             </Container>
+            <ul>
+                <li>pink</li>
+                <li>blue</li>
+                <li>silver</li>
+            </ul>
         </div>
     );
 }
