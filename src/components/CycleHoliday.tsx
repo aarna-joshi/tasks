@@ -23,7 +23,7 @@ export function CycleHoliday(): React.JSX.Element {
         "💌": "🎄",
     };
 
-    // Next holiday in the year (example order)
+    // Next holiday in the year 
     const nextYear: Record<Holiday, Holiday> = {
         // "🎃": "🐇",
         // "🐇": "🪔",
